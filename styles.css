@@ -1,7 +1,22 @@
 .primary-backgroundcolor {
-    background-color: #3A053D;
+  background-color: #3a053d;
 }
-
 .secondary-background-color {
-    background-color: #67086D;
+  background-color: #67086d;
+}
+header {
+  color: #eee;
+}
+main {
+  /*max-width: 1366px;*/
+}
+main > section {
+  height: 100vh;
+}
+.landing-section {
+  background-color: #eee; /*lembrar de tirar isso dps*/
+  padding: 0 24px;
+}
+.skills-section {
+  background-color: #eee;
 }
