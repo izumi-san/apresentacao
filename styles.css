@@ -1,7 +1,46 @@
 .primary-backgroundcolor {
-    background-color: #3A053D;
+  background-color: #3a053d;
+}
+.secondary-background-color {
+  background-color: #67086d;
+}
+header {
+  color: #eee;
+  height: 5vh;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  /*max-width: 1366px;*/
+}
+main > section {
+  height: 100vh;
+  padding: 0 12px;
+}
+.landing-section {
+  background-color: #eee; /*lembrar de tirar isso dps*/
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.greetings {
+  font-size: 1rem;
+}
+.my-name {
+  font-size: 3rem;
+}
+.presentation-text {
+  font-size: 2rem;
 }
 
-.secondary-background-color {
-    background-color: #67086D;
+.self-presentation-container {
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.skills-section {
+  background-color: #eee;
 }

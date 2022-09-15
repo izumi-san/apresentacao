@@ -5,17 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cassio Izumi</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
-    <header id="header"><h1>Meu Portifolio!</h1></header>
+    <header id="header" class="primary-backgroundcolor">
+      <p>Meu Portifolio!</p>
+    </header>
     <main>
-      <section id="landing-section"><h2>Em Construção, mais detalhes em breve</h2></section>
-      <section id="projects-experiences"></section>
-      <section id="skills"></section>
-      <section id="contact-info"></section>
+      <section id="landing" class="landing-section">
+        <div class="self-presentation-container">
+          <div class="greetings-container">
+            <p class="greetings">Olá, meu nome é</p>
+            <p class="my-name">Cassio Takeshi Izumi</p>
+          </div>
+          <p class="presentation-text">
+            Sou Desenvolvedor Full Stack e uma pessoa curiosa, gosto muito de
+            entender como processos e sistemas funcionam por baixo dos panos.
+          </p>
+        </div>
+      </section>
+      <section id="projects-experiences">
+        <div>
+          <section>
+            <p>"Aqui vai uma imagem"</p>
+            <p>legenda (site Wagner)</p>
+          </section>
+          <section>
+            <p>"Aqui vai uma imagem"</p>
+            <p>legenda (site/api das receitas)</p>
+          </section>
+          <section>
+            <p>"Aqui vai uma imagem"</p>
+            <p>leganda (Por enquanto em contrução)</p>
+          </section>
+        </div>
+      </section>
+      <section id="skills" class="skills-section">
+        <ul>
+          <li>JS</li>
+          <li>html</li>
+          <li>css</li>
+          <li>React</li>
+          <li>JQuery</li>
+          <li>Sass</li>
+          <li>Node.js</li>
+          <li>MongoDB</li>
+          <li>MySQL</li>
+        </ul>
+      </section>
+      <section id="contact-info">
+        <a href="https://github.com/izumi-san" target="_blank">Github</a>
+        <a
+          href="https://www.linkedin.com/in/cassio-takeshi-izumi/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </section>
     </main>
-    <footer></footer>
+    <footer class="secondary-background-color">cassio izumi 2022</footer>
   </body>
 </html>
