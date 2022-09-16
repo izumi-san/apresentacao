@@ -11,11 +11,8 @@ header {
 body {
   font-family: 'Roboto', sans-serif;
 }
-main {
-  /*max-width: 1366px;*/
-}
 main > section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 12px;
 }
 .landing-section {
@@ -34,6 +31,11 @@ main > section {
 .presentation-text {
   font-size: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .presentation-text {
+    font-size: 1.5rem;
+  }
+}
 
 .self-presentation-container {
   max-width: 1366px;
@@ -42,5 +44,54 @@ main > section {
   gap: 3rem;
 }
 .skills-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.skills-text {
+  font-size: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .skills-text {
+    font-size: 1.5rem;
+  }
+}
+.skills-container {
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .skills-container {
+    gap: 1rem;
+  }
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .skills-list {
+    gap: 1.2rem;
+  }
+}
+.skill-item {
+  max-width: 10rem;
+  max-height: 12rem;
+  text-align: center;
+}
+.skill-item > img {
+  width: 8rem;
+  height: 8rem;
+}
+.skill-item-name {
+  font-size: 1.5rem;
+}
+.projects-section {
   background-color: #eee;
 }
