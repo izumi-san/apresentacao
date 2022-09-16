@@ -5,7 +5,7 @@
   background-color: #67086d;
 }
 header {
-  color: #eee;
+  color: #c7c7c7;
   height: 5vh;
 }
 body {
@@ -16,7 +16,7 @@ main > section {
   padding: 0 12px;
 }
 .landing-section {
-  background-color: #eee; /*lembrar de tirar isso dps*/
+  background-color: #c7c7c7; /*lembrar de tirar isso dps*/
   height: 95vh;
   display: flex;
   justify-content: center;
@@ -93,5 +93,5 @@ main > section {
   font-size: 1.5rem;
 }
 .projects-section {
-  background-color: #eee;
+  background-color: #c7c7c7;
 }
