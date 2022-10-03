@@ -156,9 +156,6 @@ main > section:nth-child(odd) {
 }
 
 @media screen and (min-width: 500px) {
-  .experiences-section {
-    grid-template-rows: 100vh;
-  }
   .experience-header-info {
     font-size: 1.5rem;
   }
