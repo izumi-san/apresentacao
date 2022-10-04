@@ -50,20 +50,20 @@ main > section:nth-child(odd) {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.skills-text {
+.skills-text-container {
   font-size: 2rem;
+  display: grid;
+  gap: 1rem;
 }
 @media screen and (max-width: 500px) {
-  .skills-text {
+  .skills-text-container {
     font-size: 1.5rem;
   }
 }
 .skills-container {
   max-width: 1366px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  gap: 2rem;
 }
 @media screen and (max-width: 500px) {
   .skills-container {
@@ -255,4 +255,13 @@ main > section:nth-child(odd) {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.education-section{
+  display: grid;
+  align-items: center;
+}
+
+.education-container {
+  max-width: 750px;
 }
