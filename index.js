@@ -2,16 +2,14 @@ let slideIndex = 1;
 let slides = document.getElementsByClassName('mySlides');
 let dots = document.getElementsByClassName('dot');
 
-showSlides(0);
-
+activateSlide(0)
 
 // Next/previous controls
-function plusSlides(n) {
+function changeSlide(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
+function goToCertainSlide(n) {
   showSlides((slideIndex = n));
 }
 
@@ -21,25 +19,19 @@ function activateSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
+  if (n >= slides.length || n <= 0) {
+    slideIndex = 0;
+  }
 
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
-  activateSlide(slideIndex - 1);
-  scrollToTitle();
+  activateSlide(slideIndex);
+  scrollToJobSection();
 }
 
-function scrollToTitle() {
+function scrollToJobSection() {
   document.querySelector('.job-info-container').scrollIntoView({
     behavior: 'smooth',
   });
