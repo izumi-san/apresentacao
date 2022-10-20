@@ -79,7 +79,7 @@ main > section {
 }
 
 .self-presentation-container {
-  max-width: 1366px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -89,12 +89,7 @@ main > section {
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
   padding: 20px;
   text-align: center;
 }
@@ -220,7 +215,7 @@ main > section {
 .experiences-section {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   background-color: var(--backgroundColor-gray);
 }
 
