@@ -2,16 +2,17 @@
   background-color: #3a053d;
 }
 .secondary-background-color {
-  background-color: #67086d;
+  background-color: #181818;
 }
 :root {
   --backgroundColor-gray: #c7c7c7;
-  --backgroundColor-black: #202020;
+  --backgroundColor-black: #252525;
 }
 body {
   font-family: 'Roboto', sans-serif;
   display: grid;
   justify-content: center;
+  background-color: var(--backgroundColor-black);
 }
 main {
   max-width: 1600px;
@@ -104,6 +105,7 @@ main > section {
   justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #fefefe;
 }
 .skills-text-container {
   font-size: 2rem;
