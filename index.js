@@ -1,16 +1,23 @@
-let slideIndex = 1;
+let slideIndex = 0;
 let slides = document.getElementsByClassName('mySlides');
 let dots = document.getElementsByClassName('dot');
 
-activateSlide(0)
+activateSlide(0);
 
 // Next/previous controls
-function changeSlide(n) {
-  showSlides((slideIndex += n));
+function nextSlide() {
+  slideIndex +=1;
+  showSlides();
+}
+
+function prevSlide() {
+  slideIndex -=1;
+  showSlides();
 }
 
 function goToCertainSlide(n) {
-  showSlides((slideIndex = n));
+  slideIndex = n;
+  showSlides();
 }
 
 function activateSlide(n) {
@@ -18,9 +25,14 @@ function activateSlide(n) {
   dots[n].className += ' active';
 }
 
-function showSlides(n) {
-  if (n >= slides.length || n <= 0) {
+function showSlides() {
+
+  if (slideIndex === slides.length) {
     slideIndex = 0;
+  }
+  
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
   }
 
   for (let i = 0; i < slides.length; i++) {

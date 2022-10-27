@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  max-width: 1600px;
+  max-width: 1500px;
   margin-inline: auto;
 }
 
@@ -56,9 +56,16 @@ main {
 }
 main section {
   min-height: 100vh;
-  /* min-width: 100vw; */
   padding: 1.5rem 1rem;
 }
+
+@media screen and (min-width: 1500) {
+  main section {
+    /* min-height: 100vh; */
+    padding: 1rem;
+  } 
+}
+
 @media screen and (min-width: 600px) {
   main section {
     padding-inline: 2rem;
@@ -71,13 +78,11 @@ main section {
   }
 }
 
-
 .landing-section {
   height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .bg-img {
   background: url(images/pexels-photo-551993.jpeg) no-repeat center center fixed;
@@ -131,6 +136,12 @@ main section {
   display: grid;
   gap: 1rem;
 }
+@media screen and (min-width: 1360px) {
+  .skills-text-container {
+    font-size: 2.5rem;
+  }
+}
+
 .skills-text-container p a {
   text-decoration: none;
 }
@@ -217,6 +228,11 @@ main section {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 1360px) {
+  .job-info-container > h2 {
+    font-size: 2.9rem;
+  }
+}
 .job-info-container,
 .experience-infos {
   display: grid;
@@ -224,6 +240,11 @@ main section {
 }
 .experience-infos {
   row-gap: 2rem;
+}
+@media screen and (min-width: 1360px) {
+  .experience-infos p {
+    font-size: 1.4rem;
+  }
 }
 .experience-header {
   display: grid;
