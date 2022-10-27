@@ -295,10 +295,10 @@ main section {
 .prev,
 .next {
   cursor: pointer;
-  position: absolute;
-  top: 20%;
   width: auto;
-  margin-top: -22px;
+  /*   top: 20%;
+  position: absolute;
+  margin-top: -22px; */
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -308,29 +308,86 @@ main section {
   user-select: none;
   box-sizing: border-box;
 }
-.prev {
+.arrows-wrapper {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  top: 18%;
+  width: 120%;
+  left: -10%;
+}
+@media screen and (min-width: 400px) {
+  .arrows-wrapper {
+    width: 115%;
+    left: -9%;
+  }
+}
+@media screen and (min-width: 450px) {
+  .arrows-wrapper {
+    width: 110%;
+    left: -8%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .arrows-wrapper {
+    width: 105%;
+    left: -5%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .arrows-wrapper {
+    width: 105%;
+    left: -4%;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .arrows-wrapper {
+    width: 107%;
+  }
+}
+/* .prev {
   left: -9%;
 }
 .next {
   right: -9%;
-}
+} */
 
 /* Position the "next button" to the right */
 .next {
   border-radius: 3px 0 0 3px;
   box-sizing: border-box;
 }
-
+/* 
+Correção provisória do espaçamento das setas
+No futuro tentar criar uma div width 100%
+com position absolute e display flex pra
+segurar as setas.
+*/
+/* @media screen and (min-width: 430px) {
+  .prev {
+    left: -7%;
+  }
+  .next {
+    right: -7%;
+  }
+}
+@media screen and (min-width: 530px) {
+  .prev {
+    left: -5%;
+  }
+  .next {
+    right: -5%;
+  }
+}
 @media screen and (min-width: 600px) {
   .prev {
-    left: -4%;
     top: 50%;
   }
   .next {
-    right: -4%;
     top: 50%;
   }
-}
+} */
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
