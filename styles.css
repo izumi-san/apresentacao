@@ -63,7 +63,7 @@ main section {
   main section {
     /* min-height: 100vh; */
     padding: 1rem;
-  } 
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -246,14 +246,27 @@ main section {
     font-size: 1.4rem;
   }
 }
+
 .experience-header {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px){
+  .experience-header {
+    gap: 8px;
+  } 
+}
+.experience-header-job-info {
   display: grid;
   row-gap: 1rem;
   border-top: 1px solid;
   border-bottom: 1px solid;
   padding: 4px 0;
   box-sizing: border-box;
+  flex-grow: 1;
 }
+
 .experience-header-info {
   font-size: 1.1rem;
 }
@@ -296,7 +309,7 @@ main section {
 .next {
   cursor: pointer;
   width: auto;
-  padding: 16px;
+  padding-inline: 4px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -304,49 +317,11 @@ main section {
   border-radius: 0 3px 3px 0;
   user-select: none;
   box-sizing: border-box;
-}
-/* 
-Correção provisória do espaçamento das setas
-Pensar em uma nova solução!
-*/
-.arrows-wrapper {
-  position: absolute;
-  z-index: 10;
   display: flex;
-  justify-content: space-between;
-  top: 18%;
-  width: 120%;
-  left: -10%;
+  align-items: center;
+  height: 102%;
+  background-color: #3c3c3c;
 }
-@media screen and (min-width: 400px) {
-  .arrows-wrapper {
-    width: 115%;
-    left: -9%;
-  }
-}
-@media screen and (min-width: 450px) {
-  .arrows-wrapper {
-    width: 110%;
-    left: -8%;
-  }
-}
-@media screen and (min-width: 500px) {
-  .arrows-wrapper {
-    width: 105%;
-    left: -5%;
-  }
-}
-@media screen and (min-width: 1050px) {
-  .arrows-wrapper {
-    width: 105%;
-    left: -4%;
-  }
-}
-@media screen and (min-width: 1360px) {
-  .arrows-wrapper {
-    width: 107%;
-  }
-
 
 /* Position the "next button" to the right */
 .next {

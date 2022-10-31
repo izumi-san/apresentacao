@@ -19,7 +19,11 @@
     -->
     <main>
       <header id="header" class="page-header">
-        <img class="header-img" src="./images/web-programming.png" alt="Monitor icon created by Icongeek26">
+        <img
+          class="header-img"
+          src="./images/web-programming.png"
+          alt="Monitor icon created by Icongeek26"
+        />
         <div class="contact-info-container">
           <a href="https://github.com/izumi-san" target="_blank">Github</a>
           <a
@@ -130,30 +134,35 @@
           </ul>
         </div>
       </section>
+      <!-- TODO tentar procuar uma nova forma mais generica e mais DRY -->
       <section id="experiences" class="experiences-section">
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="job-info-container">
               <h2>Experiências Profissionais</h2>
               <div class="experience-header">
-                <div>
-                  <p class="experience-header-label">cargo:</p>
-                  <p class="experience-header-info">
-                    Desenvolvedor Full Stack Jr
-                  </p>
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <div class="experience-header-job-info">
+                  <div>
+                    <p class="experience-header-label">cargo:</p>
+                    <p class="experience-header-info">
+                      Desenvolvedor Full Stack Jr
+                    </p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">empresa:</p>
+                    <p class="experience-header-info">
+                      Conube - Contabilidade Online
+                    </p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">Período:</p>
+                    <p class="experience-header-info">
+                      De Março 2020 até Fevereiro 2021
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="experience-header-label">empresa:</p>
-                  <p class="experience-header-info">
-                    Conube - Contabilidade Online
-                  </p>
-                </div>
-                <div>
-                  <p class="experience-header-label">Período:</p>
-                  <p class="experience-header-info">
-                    De Março 2020 até Fevereiro 2021
-                  </p>
-                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
               </div>
               <div class="experience-infos">
                 <p>- Atuei como Desenvolvedor Full Stack Jr.</p>
@@ -190,22 +199,26 @@
             <div class="job-info-container">
               <h2>Experiências Profissionais</h2>
               <div class="experience-header">
-                <div>
-                  <p class="experience-header-label">cargo:</p>
-                  <p class="experience-header-info">
-                    Desenvolvedor Full Stack Jr
-                  </p>
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <div class="experience-header-job-info">
+                  <div>
+                    <p class="experience-header-label">cargo:</p>
+                    <p class="experience-header-info">
+                      Desenvolvedor Full Stack Jr
+                    </p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">empresa:</p>
+                    <p class="experience-header-info">DreamLabs</p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">Período:</p>
+                    <p class="experience-header-info">
+                      De Outubro 2019 até Fevereiro 2020
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p class="experience-header-label">empresa:</p>
-                  <p class="experience-header-info">DreamLabs</p>
-                </div>
-                <div>
-                  <p class="experience-header-label">Período:</p>
-                  <p class="experience-header-info">
-                    De Outubro 2019 até Fevereiro 2020
-                  </p>
-                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
               </div>
               <div class="experience-infos">
                 <p>- Atuei como Desenvolvedor Full Stack Jr.</p>
@@ -232,10 +245,10 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <div class="arrows-wrapper">
+          <!--           <div class="arrows-wrapper">
             <a class="prev" onclick="prevSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
-          </div>
+          </div> -->
         </div>
 
         <!-- The dots/circles -->
