@@ -132,13 +132,13 @@ main section {
   );
 }
 .skills-text-container {
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: grid;
   gap: 1rem;
 }
 @media screen and (min-width: 1360px) {
   .skills-text-container {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 

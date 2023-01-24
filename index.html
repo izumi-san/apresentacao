@@ -73,6 +73,11 @@
         <div class="skills-container">
           <div class="skills-text-container">
             <p>
+              Sou graduado na <a href="http://www.fatecsp.br/" target="_blank">FATEC-SP</a>
+              no curso de Análise e Desenvolvimento de Sistemas. 
+              Complementando com cursos da Alura.
+            </p>
+            <p>
               Comecei a carreira como Dev Back-end e aprendi a trabalhar com o
               Front-end no trabalho e praticando em side-projects, que estão no
               <a href="https://github.com/izumi-san" target="_blank">Github</a>.
@@ -131,12 +136,59 @@
               <img src="./images/git-flat-icons.png" alt="icone git" />
               <p class="skill-item-name">Git</p>
             </li>
+            <li class="skill-item">
+              <img src="./images/excel-flat-icons.png" alt="icone excel" />
+              <p class="skill-item-name">Excel</p>
+            </li>
           </ul>
         </div>
       </section>
       <!-- TODO tentar procuar uma nova forma mais generica e mais DRY -->
       <section id="experiences" class="experiences-section">
         <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="job-info-container">
+              <h2>Experiências Profissionais</h2>
+              <div class="experience-header">
+                <a class="prev" onclick="prevSlide()">&#10094;</a>
+                <div class="experience-header-job-info">
+                  <div>
+                    <p class="experience-header-label">cargo:</p>
+                    <p class="experience-header-info">
+                      Desenvolvedor Full Stack Jr
+                    </p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">empresa:</p>
+                    <p class="experience-header-info">
+                      IBFC - Instituto Brasileiro de Formação e Capacitação
+                    </p>
+                  </div>
+                  <div>
+                    <p class="experience-header-label">Período:</p>
+                    <p class="experience-header-info">
+                      De Novembro 2022 até o momento
+                    </p>
+                  </div>
+                </div>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
+              <div class="experience-infos">
+                <p>- Atuei como Desenvolvedor Full Stack Jr.</p>
+                <p>
+                  - Criei programas para automatizar rotinas e processos manuais, usando Node.js e React.
+                </p>
+                <p>
+                  - Participei de coletas de requisitos para buscar a melhor forma de criar um sistema para atender o departamento
+                  de planejamento.
+                </p>
+                <p>
+                  - Desenvolvi interfaces web em React em conjunto da biblioteca MUI para consumir APIs ja existentes.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="mySlides fade">
             <div class="job-info-container">
               <h2>Experiências Profissionais</h2>
@@ -255,6 +307,7 @@
         <div style="text-align: center">
           <span class="dot" onclick="goToCertainSlide(0)"></span>
           <span class="dot" onclick="goToCertainSlide(1)"></span>
+          <span class="dot" onclick="goToCertainSlide(2)"></span>
         </div>
       </section>
       <!--
