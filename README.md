@@ -4,7 +4,7 @@ Sou desenvolvedor full stack e estou me aventurando desenvolvendo páginas do ze
 # LIVE DEMO
 
 Dê uma olhada em como está ficando:
-https://izumi-san.github.io/portifolio/
+https://izumi-san.github.io/apresentacao/
 
 # Planos
 Para o futuro deste projeto e do meu desenvolvimento como profissional pretendo desenvolver projetos react e node.js para serem exibidos aqui.
